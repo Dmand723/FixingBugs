@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--This is a line i found online to fix a error that was hapening when i was veiwing it in live server. error: "GET http://127.0.0.1:5500/favicon.ico [HTTP/1.1 404 Not Found 0ms]""-->
+    <link rel="shortcut icon" href="#" />
+    <!-- -Dawson -->
+
+    <!-- Incorrect: Incorrect file path Done --><!--The file path for the stlyesheet did not exist so i replaced it with the correct path-->
+<link rel="stylesheet" href="./style.css">
+<!-- Console error: Failed to load resource: net::ERR_FILE_NOT_FOUND Done --><!-- This error is from tryig to grab a file that dose not exist, fixed by putting in the correct path for stylesheet-->
+
+    <title>Debugging 101</title>
+  </head>
+  <body>
+
+
+<!-- Look at the name of this class, is it in the CSS File? DONE --><!-- The class name was spelt diffrently in the css file, fixed spelling in css file -->
+    <div class="container">
+      <h1>Welcome to Debugging 101!</h1>
+     Let's learn how to debug our code.</p>
+    </div>
+
+
+    <input type="text" id="output" placeholder="This is an output"/>
+<!-- Incorrect: missing closing </div> tag Done --><!--Added </div> tag -->
+<div>
+    <p>This is a paragraph inside a div.</p>
+</div>
+<!-- Console warning: Unclosed tag Done --><!-- this was the result of missing the closing div tag fixed by adding closing div tag-->
+
+<!-- Incorrect: style attribute missing quotation marks DONE --><!--instead of having style: then having the style you need to have style="" with the style in the quotations-->
+<p style="color: red;" >This text is red.</p>
+<!-- Console error: Invalid or unexpected token --><!--Fixed by correcting the style-->
+
+<!-- React-specific issue with incorrect attribute name DONE --><!-- class was spelt clss so i added the a-->
+<div class="container">Hello World</div>
+<!-- Console error in React: Unknown DOM property "classnme" --><!--Fix by spelling class correctly-->
+
+
+<!-- Incorrect: Loading HTTP resource on an HTTPS page DONE --><!--Incorrect path to an image replaced with a correct one-->
+<!-- update this image to http://placehold.co/400x400 DONE-->
+<img src="http://placehold.co/400x400" alt="Example Image">
+<!-- Console error: Mixed Content: The page was loaded over HTTPS, but requested an insecure image --><!--Fixed by changing out the src of the image (the previous src was an example domain not an image)-->
+
+
+    <!-- include the JS file in the src string below this line DONE --><!--Added path to js file-->
+    <script src="./index.js"></script>
+  </body>
+</html>

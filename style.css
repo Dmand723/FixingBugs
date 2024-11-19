@@ -1,0 +1,27 @@
+p {
+  font-size: larger; /* Console warning: Invalid property value Done */ /* larger was spelt wrong fixed by fixing the spelling */
+}
+
+h1 {
+  font-size: 23px;
+  color: purple;
+}
+
+.container {
+  color: red;
+  width: 500px;
+  height: 500px;
+  /* background should be the same as #output Done */ /* changed the background color from the color that did not exist to match the background color of the id output */
+  background-color: #f0f0f0;
+}
+
+#output {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #f0f0f0;
+}
